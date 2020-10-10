@@ -55,7 +55,7 @@ $(function() {
                 }
                 layer.msg('恭喜您,登陆成功')
                 localStorage.setItem('token', res.token)
-                location.href = "/index.html"
+                location.href = "/index1.html"
             }
         })
     })

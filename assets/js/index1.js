@@ -11,7 +11,7 @@ function getUserInfo() {
             Authorization: localStorage.getItem('token')
         },
         success: function(res) {
-            console.log(res);
+            // console.log(res);
             if (res.status !== 0) {
                 return layui.layer.msg('获取用户信息失败')
             }
@@ -45,7 +45,7 @@ $('#btnLogout').on('click', function() {
         // 1. 清空本地存储中的 token
         localStorage.removeItem('token')
             // 2. 重新跳转到登录页面
-        location.href = '/login.html'
+        location.href = '/login1.html'
 
         // 关闭 confirm 询问框
         layer.close(index)
